@@ -5,9 +5,9 @@ import json, os, string, sys, threading, logging, time, re, random
 import openai
 
 #OpenAI API key
-aienv = os.getenv('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') 
+aienv = os.getenv('' ) 
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -31,7 +31,7 @@ tim = 1
 
 #Defaults
 user = ""
-running = False
+running = True
 cache = None
 qcache = None
 chat_log = None
