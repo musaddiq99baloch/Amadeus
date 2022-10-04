@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('' ) 
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -31,12 +31,12 @@ tim = 1
 
 #Defaults
 user = ""
-running = True
+running = False
 cache = None
 qcache = None
 chat_log = None
 botname = 'Grogu'
-username = 'i_am_grogu_bot'
+username = '@I_am_grogu_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -67,7 +67,7 @@ def start(bot, update):
         cache = None
         qcache = None
         botname = 'Grogu'
-        username = 'i_am_grogu_bot'
+        username = '@I_am_grogu_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -94,7 +94,7 @@ def reset(bot, update):
         cache = None
         qcache = None
         botname = 'Grogu'
-        username = 'i_am_grogu_bot'
+        username = '@I_am_grogu_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
@@ -102,7 +102,7 @@ def reset(bot, update):
         cache = None
         qcache = None
         botname = 'Grogu'
-        username = 'i_am_grogu_bot'
+        username = '@I_am_grogu_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -129,7 +129,7 @@ def retry(bot, update):
         cache = None
         qcache = None
         botname = 'Grogu'
-        username = 'i_am_grogu_bot'
+        username = '@I_am_grogu_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -189,7 +189,7 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'i_am_grogu_bot'
+                username = '@I_am_grogu_bot'
                 botname = 'Grogu'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
