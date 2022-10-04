@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('' ) 
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "coIFM2Epn6bwVh7Av3AiT3BlbkFJzC9qFAUrflELJ3F2fFYE"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -138,7 +138,7 @@ def retry(bot, update):
 
 def runn(bot, update):
     """Send a message when a message is received."""
-    new = False
+    new = True
     global botname
     global username
     if "/botname " in update.message.text:
