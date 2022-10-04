@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('' ) 
 if aienv == None:
-    openai.api_key = "coIFM2Epn6bwVh7Av3AiT3BlbkFJzC9qFAUrflELJ3F2fFYE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -31,7 +31,7 @@ tim = 1
 
 #Defaults
 user = ""
-running = False
+running = True
 cache = None
 qcache = None
 chat_log = None
