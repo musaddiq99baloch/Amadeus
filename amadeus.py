@@ -5,9 +5,9 @@ import json, os, string, sys, threading, logging, time, re, random
 import openai
 
 #OpenAI API key
-aienv = os.getenv('OPENAI_KEY')
+aienv = os.getenv('org-Q8O9uKBKOycFlaET5uyijj9L')
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'Grogu'
+        username = 'i_am_grogu_bot'
         update.message.reply_text('Hi')
         return 
     else:
